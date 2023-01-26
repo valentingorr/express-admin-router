@@ -1,0 +1,21 @@
+@mixin size($size, $radius: 0) {
+	width: $size;
+	height: $size;
+	@if $radius != 0 {
+		border-radius: $radius;
+	}
+}
+
+@mixin bg($url, $size, $position: center) {
+	background-image: url($url);
+	background-repeat: no-repeat;
+	background-position: $position;
+	background-size: $size;
+}
+
+$bodyColor1: #f5f5f5;
+$bodyColor2: white;
+
+:export{
+	bodyColor1: $bodyColor1;
+}

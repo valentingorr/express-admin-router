@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Admin Panel</title>
+	</head>
+	<body>
+		<form action="<%- parameters.route %>/login" method="post">
+			<input required placeholder="username" type="text" name="username" />
+			<input required placeholder="password" type="password" name="password" />
+			<button type="submit">Send</button>
+		</form>
+		<% if(message !== false) %> <%- message.text %> <% %>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+@import "config";
+
+* {
+	text-decoration: inherit;
+	outline: none;
+	border: none;
+	box-sizing: border-box;
+	align-items: center;
+	list-style: none;
+}
+
+ul, body {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: $bodyColor1;
+	#root {
+		display: flex;
+		align-items: start;
+		height: 100vh;
+		> nav {
+			background-color: $bodyColor2;
+			height: 100%;
+			padding: 1em;
+		}
+	}
+}
